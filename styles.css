@@ -1,0 +1,107 @@
+/* Exsternal CSS */
+
+/* body er a CSS Selector*/
+/* {} Idicates a CSS Declaration*/
+body {
+  /* Properti:Value; is a CSS Rule */
+  background-color: aquamarine;
+  color: #0d0d0d;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.headerlogo {
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.navigaton {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*MAIN*/
+.hero {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroText {
+  width: 50%;
+}
+
+.heroImg {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.prosjects {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prosjectsCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  border: 3px solid black;
+  border-radius: 10px;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardText {
+  width: 50%;
+}
+
+.cardImg {
+  width: 50%;
+  border: 1px solid black;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/*MEDIA QERY*/
+@media (max-width: 426px) {
+  body {
+    background-color: beige;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .prosjectsCard {
+    flex-direction: column;
+  }
+}
